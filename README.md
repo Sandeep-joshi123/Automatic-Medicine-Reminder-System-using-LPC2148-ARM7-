@@ -128,7 +128,7 @@ This project demonstrates practical implementation of:
 * Embedded System Debugging
 
 
-## Project Specifications
+## Development Environment
 
 | Parameter | Details |
 |-----------|---------|
