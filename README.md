@@ -1,3 +1,8 @@
+![Platform](https://img.shields.io/badge/Platform-LPC2148-blue)
+![Language](https://img.shields.io/badge/Language-Embedded%20C-green)
+![IDE](https://img.shields.io/badge/IDE-Keil-orange)
+![Simulation](https://img.shields.io/badge/Simulation-Proteus-red)
+
 # AUTOMATIC MEDICINE REMINDER SYSTEM USING LPC2148 (ARM7)
 
 ## PROJECT OVERVIEW
