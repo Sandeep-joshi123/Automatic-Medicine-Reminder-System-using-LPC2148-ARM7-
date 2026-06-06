@@ -1,53 +1,140 @@
-# Automatic-Medicine-Reminder-System-using-LPC2148-ARM7-
-Automatic Medicine Reminder System using LPC2148 (ARM7)
+# AUTOMATIC MEDICINE REMINDER SYSTEM USING LPC2148 (ARM7)
 
-Project Title
+## PROJECT OVERVIEW
 
-Automatic Medicine Reminder System using LPC2148 with RTC, LCD, Keypad,
-UART, ADC, and Alarm Management
+The Automatic Medicine Reminder System is an embedded healthcare application developed using the LPC2148 ARM7 microcontroller. The system assists users in taking medicines on time by maintaining accurate real-time using the built-in RTC (Real-Time Clock) and generating reminders through LCD, UART, LEDs, and buzzer notifications.
 
-Project Overview
+The project provides a simple menu-driven interface using a 4x4 keypad, allowing users to set the current time, manage medicine alarms, and monitor system status. It demonstrates the integration of multiple LPC2148 peripherals in a practical real-time embedded application.
 
-This project is an embedded healthcare application developed on the
-LPC2148 ARM7 microcontroller. It reminds users to take medicines on time
-using the internal RTC and provides a menu-driven interface through
-keypad, LCD and UART.
+## OBJECTIVES
 
-Features
+* Develop a real-time medicine reminder system.
+* Maintain accurate time using the LPC2148 RTC.
+* Provide a user-friendly keypad and LCD interface.
+* Generate audio and visual alerts for medicine schedules.
+* Demonstrate the integration of RTC, UART, ADC, GPIO, and I2C peripherals.
 
--   Set current time
--   Add/View/Delete alarms
--   RTC-based reminder system
--   LCD and UART display
--   ADC monitoring
--   Buzzer and LED alerts
--   Snooze/Stop alarm
--   7-segment keypad feedback
+## FEATURES
 
-Hardware
+* Real-Time Clock (RTC) based scheduling
+* Set current time using keypad
+* Add multiple medicine alarms
+* View stored alarms
+* Delete alarms
+* View current time
+* ADC-based voltage/temperature monitoring
+* LCD display interface
+* UART terminal communication
+* LED and buzzer alarm indication
+* Snooze and Stop alarm functionality
+* 7-Segment display for keypad input
 
-LPC2148, 16x2 LCD, 4x4 Keypad, LEDs, Buzzer, 7-Segment Display, ADC
-Voltage Divider, UART Terminal.
+## HARDWARE COMPONENTS
 
-Software
+* LPC2148 ARM7 Development Board
+* 16x2 LCD Display
+* 4x4 Matrix Keypad
+* LEDs
+* Buzzer
+* 7-Segment Display
+* ADC Voltage Divider Circuit
+* UART Virtual Terminal
+* Power Supply
 
-Embedded C, Keil uVision, Proteus.
+## SOFTWARE TOOLS
 
-Working
+* Embedded C
+* Keil µVision IDE
+* Proteus Design Suite
 
-Initialize peripherals -> Set current time -> Store alarms -> Compare
-RTC with alarms -> Trigger buzzer/LED/LCD/UART alert -> Snooze/Stop ->
-Continue monitoring.
+## LPC2148 PERIPHERALS USED
 
-LPC2148 Peripherals Used
+RTC    : Real-Time Clock for accurate time keeping
 
-RTC, UART0, ADC0, GPIO, I2C.
+UART0  : Serial communication and debugging
 
-Future Scope
+GPIO   : Keypad, LEDs, Buzzer, and 7-Segment control
 
-Battery backup, EEPROM storage, GSM/Bluetooth/Wi-Fi, mobile app
-integration and cloud monitoring.
+ADC0   : Analog voltage monitoring
 
-Author
+I2C    : LCD communication
 
-Academic Embedded Systems Mini Project.
+## WORKING PRINCIPLE
+
+1. Initialize all peripherals.
+2. User sets the current time through the keypad.
+3. RTC starts maintaining accurate real-time.
+4. User can add, view, or delete medicine alarms.
+5. Alarm information is stored in an array of structures.
+6. The controller continuously compares RTC time with stored alarm timings.
+7. When an alarm time matches:
+
+   * LCD displays reminder.
+   * UART displays reminder.
+   * LEDs and buzzer are activated.
+8. User can Snooze or Stop the alarm.
+9. System returns to the main menu and continues monitoring.
+
+## MENU OPTIONS
+
+1. View Alarm
+
+2. Add Alarm
+
+3. Delete Alarm
+
+4. View Current Time
+
+5. View Temperature / ADC
+
+6. Home
+
+## PROJECT HIGHLIGHTS
+
+* Developed using LPC2148 ARM7 Microcontroller
+* RTC-based real-time medicine reminder
+* Multiple alarm management
+* Menu-driven embedded application
+* UART and LCD dual display interface
+* ADC integration for analog monitoring
+* Implemented using Embedded C
+* Simulated and tested using Proteus
+* Compiled using Keil µVision IDE
+
+
+## FUTURE ENHANCEMENTS
+
+* Battery backup for RTC
+* EEPROM/Flash alarm storage
+* GSM/SMS reminder notifications
+* Bluetooth/Wi-Fi connectivity
+* Mobile application integration
+* Cloud-based medicine monitoring
+* Medicine name and dosage management
+
+## LEARNING OUTCOMES
+
+This project demonstrates practical implementation of:
+
+* Embedded C Programming
+* ARM7 LPC2148 Programming
+* RTC Configuration
+* ADC Interfacing
+* UART Communication
+* I2C Communication
+* Matrix Keypad Scanning
+* LCD Interfacing
+* Alarm Scheduling Logic
+* Embedded System Debugging
+
+
+## Project Specifications
+
+| Parameter | Details |
+|-----------|---------|
+| Project Type | Academic Mini Project |
+| Platform | LPC2148 ARM7 Microcontroller |
+| Language | Embedded C |
+| IDE | Keil µVision |
+| Simulation | Proteus Design Suite |
+
