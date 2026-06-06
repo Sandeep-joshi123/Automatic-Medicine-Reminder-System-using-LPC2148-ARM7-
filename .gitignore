@@ -1,0 +1,33 @@
+# Keil Project Files
+*.uvopt
+*.uvgui.*
+*.bak
+*.dep
+
+# Build Output Files
+*.axf
+*.bin
+*.hex
+*.lib
+*.lst
+*.map
+*.o
+*.obj
+
+# Temporary Files
+*.tmp
+*.log
+
+# Backup Files
+*~
+*.orig
+
+# Windows Files
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Proteus Backup Files
+*.pdsbak
